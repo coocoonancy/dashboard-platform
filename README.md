@@ -49,7 +49,7 @@ simpledashboard/
 3. **克隆代码并安装依赖**：
    ```bash
    git clone https://github.com/yourname/dashboard-platform
-   cd frontend
+   cd dashboard-platform
    npm install
    ```
 4. **启动 MongoDB 并导入样本数据**（确保 MongoDB 处于运行状态）：
