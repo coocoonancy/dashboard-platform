@@ -1,8 +1,8 @@
-# Simple Dashboard
+# Dashboard Platform
 
 ## 项目简介
 
-Simple Dashboard 是一个以 **Node.js** 搭配 **Express** 和 **MongoDB** 实现的简易仪表盘示例，界面使用 **Gridstack.js** 实现拖拽布局，并通过 **ECharts** 渲染图表。用户可在浏览器中点击 “Add Chart” 按钮自由添加图表，每个图表从 MongoDB 指定集合读取数据并以柱状图展示，适合学习整合前后端的最小实现。
+Dashboard Platform 是一个以 **Node.js** 搭配 **Express** 和 **MongoDB** 实现的简易仪表盘示例，界面使用 **Gridstack.js** 实现拖拽布局，并通过 **ECharts** 渲染图表。用户可在浏览器中点击 “Add Chart” 按钮自由添加图表，每个图表从 MongoDB 指定集合读取数据并以不同类型图表展示，适合学习整合前后端的最小实现。
 
 ## 目录结构
 
@@ -19,7 +19,9 @@ simpledashboard/
 │       ├── App.vue
 │       ├── main.ts
 │       ├── components/
+│       │   └── ChartConfigPanel.vue
 │       │   └── ChartItem.vue
+│       │   └── ChartRenderer.vue
 │       └── stores/
 │           └── dashboard.ts
 
@@ -46,7 +48,7 @@ simpledashboard/
    ```
 3. **克隆代码并安装依赖**：
    ```bash
-   git clone https://github.com/yourname/simpledashboard.git
+   git clone https://github.com/yourname/dashboard-platform
    cd simpledashboard
    npm install
    ```
