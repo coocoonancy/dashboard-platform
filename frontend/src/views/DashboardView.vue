@@ -64,7 +64,8 @@ function loadDashboard() {
 }
 
 onMounted(() => {
-  gridstack = GridStack.init({ float: true }, gridEl.value!);
+  gridstack = GridStack.init({}, gridEl.value!);
+  localStorage.setItem("dashboard", "");
   // 初始加载
   const json = localStorage.getItem("dashboard");
   if (json) {
@@ -73,14 +74,14 @@ onMounted(() => {
     loadDashboardToGrid(gridstack, dashboardStore.widgets, DynamicWidget);
   }
 
-  gridstack.on("change", function (event, items) {
-    items.forEach((item) => {
-      const w = dashboardStore.widgets.find((w) => w.id === item.id);
-      if (w && item.x !== undefined && item.y !== undefined) {
-        w.position = { x: item.x, y: item.y, w: item.w, h: item.h };
-      }
-    });
-  });
+  // gridstack.on("change", function (event, items) {
+  //   items.forEach((item) => {
+  //     const w = dashboardStore.widgets.find((w) => w.id === item.id);
+  //     if (w && item.x !== undefined && item.y !== undefined) {
+  //       w.position = { x: item.x, y: item.y, w: item.w, h: item.h };
+  //     }
+  //   });
+  // });
 
   gridstack.on("removed", function (event, items) {
     dashboardStore.widgets = dashboardStore.widgets.filter(

@@ -5,9 +5,9 @@
     <!-- 图表类型 -->
     <label>Chart Type:</label>
     <el-select v-model="localConfig.type">
-      <option value="bar">Bar</option>
-      <option value="line">Line</option>
-      <option value="pie">Pie</option>
+      <el-option value="bar">Bar</el-option>
+      <el-option value="line">Line</el-option>
+      <el-option value="pie">Pie</el-option>
     </el-select>
 
     <!-- 标题 -->
@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { ref, watch, computed } from "vue";
-import { ElSelect, ElButton, ElInput } from "element-plus";
+import { ElSelect, ElButton, ElInput, ElOption } from "element-plus";
 const props = defineProps<{ initialConfig: any }>();
 const emit = defineEmits(["applyConfig"]);
 
