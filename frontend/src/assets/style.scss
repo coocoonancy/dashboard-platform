@@ -1,0 +1,23 @@
+:root { 
+  --nav_h: 64px;
+  --nav_font_w_regular: 400;
+  /* 横向导航栏 */
+  // 背景色 #191919
+  --nav_h_bg: #191919;
+  // 字体颜色 #fff
+  --nav_h_font: #fff;
+  // 选中字体颜色 #fff
+  --nav_h_font_s: #fff;
+  // 选中颜色 #007fff
+  --nav_h_selected: #007fff;
+
+  /* 竖向导航栏 */
+  // 背景色 #fff
+  --nav_v_bg: #fff;
+  // 字体颜色 #515A6E
+  --nav_v_font: #515a6e;
+  // 选中字体颜色 #007FFF
+  --nav_v_font_s: #007fff;
+  // 选中颜色 #f1f1f1
+  --nav_v_selected: #f1f1f1;
+}
