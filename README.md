@@ -19,9 +19,7 @@ simpledashboard/
 │       ├── App.vue
 │       ├── main.ts
 │       ├── components/
-│       │   └── ChartConfigPanel.vue
-│       │   └── ChartItem.vue
-│       │   └── ChartRenderer.vue
+│       │   └── DynamicWidget.vue
 │       └── stores/
 │           └── dashboard.ts
 
