@@ -7,7 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.9.0",
+    "axios": "^1.12.0",
     "echarts": "^5.4.2",
     "element-plus": "^2.10.1",
     "gridstack": "^8.4.0",
